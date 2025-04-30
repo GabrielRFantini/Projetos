@@ -36,4 +36,20 @@ def add_two_numbers(number_one, number_two):
 
 add_two_numbers(4,3)
 
+#DOCSTRINGS
+""" Podemos usar o comando .__doc__ para chamarmos a documentação que resume
+     a finalidade de uma função ou objeto.
+"""
+EXPECTED_BAKE_TIME = 40
+#tempo que o lasanha vai demorar para assar, em minutos.
+
+def bake_time_remaining(oven_time):
+    """"Recebe os minutos reais que a lasanha ficou no forno.
+    :param oven_time tempo que a lasanha está no forno, em minutos.
+    :return EXPECTED_BAKE_TIME - oven_time
+    """
+    return EXPECTED_BAKE_TIME - oven_time
+
+print(bake_time_remaining.__doc__)
+
 
